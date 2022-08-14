@@ -1,0 +1,41 @@
+const numberOne = document.querySelector('#firstNumber')
+const numberTwo = document.querySelector('#secondNumber')
+const result = document.querySelector('#result')
+const div = document.createElement('div')
+
+function addNumbers(){
+const first = numberOne.value
+const second = numberTwo.value
+let sum = (+first + +second)
+console.log(sum)
+}
+function subtractNumbers(){
+const first = numberOne.value
+const second = numberTwo.value
+let subtract = (+first - +second)
+div.innerHTML = subtract
+result.append(div)
+numberOne.value = ''
+numberTwo.value  = ''
+    
+}
+
+function multiplyNumbers() {
+const first = numberOne.value
+const second = numberTwo.value
+let multiply = (+first * +second)
+div.innerHTML = multiply
+result.append(div)
+numberOne.value = ''
+numberTwo.value  = ''
+}
+
+function divideNumbers(){
+const first = numberOne.value
+const second = numberTwo.value
+let divide = (+first / +second)
+div.innerHTML = divide
+result.append(div)  
+numberOne.value = ''
+numberTwo.value  = ''
+            }
