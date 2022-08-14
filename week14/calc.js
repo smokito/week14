@@ -7,7 +7,11 @@ function addNumbers(){
 const first = numberOne.value
 const second = numberTwo.value
 let sum = (+first + +second)
-console.log(sum)
+div.innerHTML = sum
+result.append(div)
+numberOne.value = ''
+numberTwo.value  = ''
+    
 }
 function subtractNumbers(){
 const first = numberOne.value
