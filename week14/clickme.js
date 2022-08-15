@@ -14,4 +14,12 @@ function chageColor() {
     document.body.style.background = "#eae7df"
 }
 
+ function changePicture(){
+    let treeImage = document.querySelector('.img-tree')
+    let journeyImage = document.querySelector('.img-journey')
+    let starImage = document.querySelector('.img-star')
+    treeImage.src = './assets/river.jpg'
+    journeyImage.src ='./assets/tree.jpg'
+    starImage.src = './assets/journey.jpg';
     
+ }

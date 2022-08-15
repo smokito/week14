@@ -40,3 +40,39 @@ height: 55px;
 border-radius: 10px;
 font-size: 1.5rem;
 }
+.gallery {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+}
+.gallery__img-one {
+    grid-column: 1/2;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+.gallery__img-two {
+    grid-column: 2/3;
+}
+.gallery__img-three{
+    grid-column: 3/4;
+}
+.gallery__img-four {
+    grid-column: 4/5;
+}
+.gallery__img-five {
+    grid-column: 5/6;
+    display: flex;
+    align-items: center;
+}
+.img-tree,
+.img-journey,
+.img-star {
+    max-width: 450px;
+    max-height: 300px;
+}
+.arrow-right {
+    max-width: 45px;
+    max-height: 45px;
+}
